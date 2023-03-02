@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather App - API call</title>
+</head>
+<body>
+    
+    
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" placeholder="Location">
+            <button class="fa-solid fa-magnifying-glass"></button>
+        </div>
+
+        <div class="invalid">
+            <img id='location-error' src="/images/404-page-not-found-4190275-3468592.png" alt="error-invalid-location">
+            <p>Invalid Location</p>
+        </div> 
+
+
+        <div class="weather-content">
+            <img src=" ">
+            <p class="temp"></p>
+            <p class="desc"></p>
+        </div>
+
+        <div class="weather-details">
+            <div class="humidity">
+                <i class="fa-solid fa-cloud"></i>  
+                <div class="text">
+                    <span></span>
+                    <p>Humidity</p>
+                </div>        
+              </div>
+
+              <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Wind Speed</p>
+                </div>        
+            </div>
+            </div>
+            
+
+            <div class="forecast">
+                <h2>5-Day Forecast</h2>
+                <div class="forecast-container">
+
+                </div>
+              </div>
+              
+            
+        </div>
+
+    <script src="https://kit.fontawesome.com/62785265be.js" crossorigin="anonymous"></script>
+    <script src="revised.js"></script>
+    <script src="forecast.js"></script>
+</body> 
+</html>
